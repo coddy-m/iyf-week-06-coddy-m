@@ -73,6 +73,9 @@ No build tools or installation required.
 - **Challenge:** Preventing duplicate recent searches  
   **Solution:** Added checks before saving to localStorage
 
+## Weather Dashboard Demo
+- [Weather Dashboard](https://coddy-m.github.io/weather-dashboard/)
+
 ---
 
 **Week 6 Submission** – Asynchronous JavaScript
