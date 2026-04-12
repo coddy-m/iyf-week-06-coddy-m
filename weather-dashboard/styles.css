@@ -1,0 +1,104 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body.weather-app {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background 0.8s ease;
+}
+
+/* Default */
+.weather-app { background: linear-gradient(135deg, #667eea, #764ba2); }
+
+/* Weather backgrounds */
+.clear { background: linear-gradient(135deg, #60a5fa, #3b82f6); }
+.sunny { background: linear-gradient(135deg, #f8c65a, #f8c65a); }
+.cloudy { background: linear-gradient(135deg, #94a3b8, #64748b); }
+.rainy { background: linear-gradient(135deg, #64748b, #334155); }
+.thunderstorm { background: linear-gradient(135deg, #1e293b, #0f172a); }
+.snowy { background: linear-gradient(135deg, #e0f2fe, #bae6fd); }
+.misty { background: linear-gradient(135deg, #cbd5e1, #94a3b8); }
+
+.container {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 620px;
+    width: 100%;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+}
+
+h1 { text-align: center; margin-bottom: 25px; }
+
+form { display: flex; gap: 10px; margin-bottom: 20px; }
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #757c9c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hidden { display: none; }
+
+#error {
+    background: #fee;
+    color: #d32f2f;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+#weather {
+    background: #82b4bd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#temp { font-size: 40px; font-weight: bold; }
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 10px;
+}
+
+.forecast-card {
+    background: #cbe4f7;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Recent searches */
+#recentList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.recent-btn {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    background: #9fc75a;
+    cursor: pointer;
+}
+
+.recent-btn:hover {
+    background: #e2e4ee;
+    color: rgb(48, 162, 170);
+}

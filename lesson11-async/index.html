@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6: Async JavaScript</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+        .output { background: #1e1e1e; color: #d4d4d4; padding: 1rem; border-radius: 6px; font-family: monospace; white-space: pre-wrap; max-height: 400px; overflow-y: auto; }
+        .section { margin: 2rem 0; padding: 1rem; border-left: 4px solid #4361ee; background: #f8f9fa; }
+        button { padding: 0.5rem 1rem; background: #4361ee; color: white; border: none; border-radius: 4px; cursor: pointer; margin: 0.25rem; }
+        button:hover { background: #3a56d4; }
+    </style>
+</head>
+<body>
+    <h1>🔄 Async JavaScript Playground</h1>
+    <p>Open DevTools Console (F12) to see detailed output</p>
+    
+    <div class="section">
+        <h3>Task 11.1: Sync vs Async</h3>
+        <button onclick="runSyncDemo()">Run Sync Demo</button>
+        <button onclick="runAsyncDemo()">Run Async Demo</button>
+        <button onclick="predictOutput()">Predict Output Challenge</button>
+    </div>
+    
+    <div class="section">
+        <h3>Task 11.2: Callbacks & Promises</h3>
+        <button onclick="runCallbackDemo()">Run Callback Demo</button>
+        <button onclick="runPromiseDemo()">Run Promise Demo</button>
+        <button onclick="runCallbackHell()">Experience Callback Hell 😱</button>
+    </div>
+    
+    <div class="section">
+        <h3>Task 11.3: Promise Chaining</h3>
+        <button onclick="runPromiseChain()">Run Promise Chain</button>
+        <button onclick="runPromiseAll()">Run Promise.all</button>
+        <button onclick="runPromiseRace()">Run Promise.race</button>
+    </div>
+    
+    <div class="section">
+        <h3>Task 11.4: Async/Await</h3>
+        <button onclick="runAsyncAwait()">Run Async/Await Demo</button>
+        <button onclick="runErrorHandling()">Test Error Handling</button>
+        <button onclick="runParallelAsync()">Run Parallel Async</button>
+    </div>
+    
+    <div class="output" id="output"></div>
+    
+    <script src="../utils/helpers.js"></script>
+    <script src="async-basics.js"></script>
+    <script src="promises.js"></script>
+    <script src="async-await.js"></script>
+</body>
+</html>
